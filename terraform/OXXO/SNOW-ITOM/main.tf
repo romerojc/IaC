@@ -28,7 +28,7 @@ locals {
   availability_domain = "HSqW:MX-MONTERREY-1-AD-1"
   compartment_id      = "ocid1.compartment.oc1..aaaaaaaawond7xtn3whlzg2n3k24q7jfe6iyt5mmjspnr73wq4htxqkprgta"
   subnet_id           = "ocid1.subnet.oc1.mx-monterrey-1.aaaaaaaau5kkq4x6wku2bgpejmmsui5dsreeh72zqhbocwy2jr2ppjdj3ruq"
-  image_id            = "ocid1.image.oc1.mx-monterrey-1.aaaaaaaapusepjywfsvwzwbgyxnxokn5cfzrebny2o542vhzqwnfptxcfyba"
+  image_id            = "ocid1.image.oc1.mx-monterrey-1.aaaaaaaajyquiblquvlk62zdz7zfgpb3m5pmtyzf7mm3uytd4n4x55kkg7ya"
   instance_name       = "OXOCI-VM-APP-SNOWITON-PRD"
   block_volume_name   = "OXOCI-BLKVL-APP-SNOWITON-PROD-DATA"
 }
