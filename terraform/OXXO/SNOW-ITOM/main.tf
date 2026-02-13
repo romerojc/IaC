@@ -143,19 +143,19 @@ resource "oci_core_instance" "snow_itom_instance" {
 
     # J2C - Spanish Tags
     "J2C.NombreDelProyecto"              = "SNow ITOM MID Server"
-    "J2C.ClasificacionDeDatos"           = "Sensible"
+    "J2C.ClasificacionDeDatos"           = "Confidencial"
     "J2C.NombreDelPropietario"           = "Morales Rodriguez Alicia Anahi"
     "J2C.NombreDeImplementador"          = "Jesucristo Thopson"
     "J2C.NombreDelSolicitante"           = "Juan Carlos Romero"
-    "J2C.BusDeNegocio"                   = "FEMSA Servicios"
-    "J2C.PlataformaTecnologica"          = "Service Now"
+    "J2C.BusDeNegocio"                   = "Digital"
+    "J2C.PlataformaTecnologica"          = "Infraestructura"
     "J2C.CentroDeGastos(CR)"             = "43zgn"
     "J2C.SolicitudDeInversion(SI)"       = ""
     "J2C.Uso"                            = "SNow ITOM MID Server"
-    "J2C.Geografia"                      = "Mexico"
+    "J2C.Geografia"                      = "México"
     "J2C.Ambiente"                       = "PRD"
     "J2C.FechaDeImplementacion"          = "02-12-2026"
-    "J2C.AreasJ2C"                       = "Centro Operaciones"
+    "J2C.AreasJ2C"                       = "Cloud Operation"
   }
 }
 

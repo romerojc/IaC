@@ -29,6 +29,9 @@ $users = @(
     @{Name="cloud_support"; Password="gY74!cne4GhLqzy";      Description="Cloud SysAdmin - Cloud Born"},
     @{Name="Admin01";       Password="uPi39sug512satgDaJDz"; Description="Service Owner Access"},
     @{Name="Provider01";    Password="eBR2mJVPDrbb9GKAmLB0"; Description="Vendor Access"}
+    @{Name="automation";    Password="ZTcfJFLAfcY6T2gnkHAc"; Description="Automation tools access"}
+    @{Name="admin_FEMSA";    Password="fii0sFax7w9QCneWhBN1"; Description="FEMSA Admin Access"}
+
 )
 
 foreach ($user in $users) {
