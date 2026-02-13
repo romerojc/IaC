@@ -1,0 +1,261 @@
+2026/02/13 03:22:46[TERRAFORM_CONSOLE] [INFO] Getting providers from registry and/or custom terraform providers
+2026/02/13 03:22:47[TERRAFORM_CONSOLE] [INFO] 
+2026/02/13 03:22:47[TERRAFORM_CONSOLE] [INFO] Initializing provider plugins...
+2026/02/13 03:22:47[TERRAFORM_CONSOLE] [INFO] - Finding oracle/oci versions matching "~> 5.0"...
+2026/02/13 03:22:47[TERRAFORM_CONSOLE] [INFO] - Finding latest version of hashicorp/cloudinit...
+2026/02/13 03:22:48[TERRAFORM_CONSOLE] [INFO] - Installing oracle/oci v5.47.0...
+2026/02/13 03:22:50[TERRAFORM_CONSOLE] [INFO] - Installed oracle/oci v5.47.0 (signed by a HashiCorp partner, key ID 1533A49284137CEB)
+2026/02/13 03:22:50[TERRAFORM_CONSOLE] [INFO] - Installing hashicorp/cloudinit v2.3.7...
+2026/02/13 03:22:51[TERRAFORM_CONSOLE] [INFO] - Installed hashicorp/cloudinit v2.3.7 (signed by HashiCorp)
+2026/02/13 03:22:51[TERRAFORM_CONSOLE] [INFO] 
+2026/02/13 03:22:51[TERRAFORM_CONSOLE] [INFO] Partner and community providers are signed by their developers.
+2026/02/13 03:22:51[TERRAFORM_CONSOLE] [INFO] If you'd like to know more about provider signing, you can read about it here:
+2026/02/13 03:22:51[TERRAFORM_CONSOLE] [INFO] https://www.terraform.io/docs/cli/plugins/signing.html
+2026/02/13 03:22:51[TERRAFORM_CONSOLE] [INFO] 
+2026/02/13 03:22:51[TERRAFORM_CONSOLE] [INFO] Terraform has created a lock file .terraform.lock.hcl to record the provider
+2026/02/13 03:22:51[TERRAFORM_CONSOLE] [INFO] selections it made above. Include this file in your version control repository
+2026/02/13 03:22:51[TERRAFORM_CONSOLE] [INFO] so that Terraform can guarantee to make the same selections by default when
+2026/02/13 03:22:51[TERRAFORM_CONSOLE] [INFO] you run "terraform init" in the future.
+2026/02/13 03:22:51[TERRAFORM_CONSOLE] [INFO] 
+2026/02/13 03:22:51[TERRAFORM_CONSOLE] [INFO] Terraform has been successfully initialized!
+2026/02/13 03:22:51[TERRAFORM_CONSOLE] [INFO] 
+2026/02/13 03:22:51[TERRAFORM_CONSOLE] [INFO] You may now begin working with Terraform. Try running "terraform plan" to see
+2026/02/13 03:22:51[TERRAFORM_CONSOLE] [INFO] any changes that are required for your infrastructure. All Terraform commands
+2026/02/13 03:22:51[TERRAFORM_CONSOLE] [INFO] should now work.
+2026/02/13 03:22:51[TERRAFORM_CONSOLE] [INFO] 
+2026/02/13 03:22:51[TERRAFORM_CONSOLE] [INFO] If you ever set or change modules or backend configuration for Terraform,
+2026/02/13 03:22:51[TERRAFORM_CONSOLE] [INFO] rerun this command to reinitialize your working directory. If you forget, other
+2026/02/13 03:22:51[TERRAFORM_CONSOLE] [INFO] commands will detect it and remind you to do so if necessary.
+2026/02/13 03:22:51[TERRAFORM_CONSOLE] [INFO] Loading Environment variables from var.env file...
+2026/02/13 03:22:52[TERRAFORM_CONSOLE] [INFO] data.cloudinit_config.windows_init: Reading...
+2026/02/13 03:22:52[TERRAFORM_CONSOLE] [INFO] data.cloudinit_config.windows_init: Read complete after 0s [id=3939164143]
+2026/02/13 03:22:53[TERRAFORM_CONSOLE] [INFO] data.oci_core_volume_backup_policies.predefined: Reading...
+2026/02/13 03:22:53[TERRAFORM_CONSOLE] [INFO] data.oci_core_volume_backup_policies.predefined: Read complete after 0s [id=CoreVolumeBackupPoliciesDataSource-0]
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO] 
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO] Terraform used the selected providers to generate the following execution
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO] plan. Resource actions are indicated with the following symbols:
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]   + create
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO] 
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO] Terraform will perform the following actions:
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO] 
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]   # oci_core_instance.snow_itom_instance will be created
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]   + resource "oci_core_instance" "snow_itom_instance" {
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + availability_domain                 = "HSqW:MX-MONTERREY-1-AD-1"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + boot_volume_id                      = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + capacity_reservation_id             = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + compartment_id                      = "ocid1.compartment.oc1..aaaaaaaawond7xtn3whlzg2n3k24q7jfe6iyt5mmjspnr73wq4htxqkprgta"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + compute_cluster_id                  = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + dedicated_vm_host_id                = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + defined_tags                        = {
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "J2C.Ambiente"                        = "PRD"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "J2C.AreasJ2C"                        = "Centro Operaciones"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "J2C.BusDeNegocio"                    = "FEMSA Servicios"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "J2C.CentroDeGastos(CR)"              = "43zgn"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "J2C.ClasificacionDeDatos"            = "Sensible"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "J2C.FechaDeImplementacion"           = "02-12-2026"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "J2C.Geografia"                       = "Mexico"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "J2C.NombreDeImplementador"           = "Jesucristo Thopson"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "J2C.NombreDelPropietario"            = "Morales Rodriguez Alicia Anahi"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "J2C.NombreDelProyecto"               = "SNow ITOM MID Server"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "J2C.NombreDelSolicitante"            = "Juan Carlos Romero"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "J2C.PlataformaTecnologica"           = "Service Now"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "J2C.SolicitudDeInversion(SI)"        = ""
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "J2C.Uso"                             = "SNow ITOM MID Server"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.AccessByBastionStatus" = "accessible"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.AccessByVaultStatus"   = "accessible"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.AccessLevel"           = "private"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.Application"           = "SNow ITOM MID Server"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.Approver"              = "Briones Garza Alejandro"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.Area"                  = "Centro Operaciones"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.BackupPolicy"          = "standard"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.BusinessUnit"          = "FEMSA Servicios"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.CMDBStatus"            = "not-discovered"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.ChangeOrder"           = "CHG0140789"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.CloudAgentStatus"      = "ok"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.CloudArchitect"        = "Juan Carlos Romero"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.ComplianceRequirement" = ""
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.CostCenter"            = "43zgn"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.CreatedBy"             = "IaC (Terraform)"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.CreatedByTeam"         = "Kyndryl"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.CreationDate"          = "02-12-2026"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.Criticality"           = "low"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.DataClassification"    = "confidential"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.DataResidency"         = "Mexico"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.Description"           = "SNow ITOM Scanner"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.Domain"                = "proximidad.com"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.EndpointManager"       = ""
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.Environment"           = "PRD"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.Hostname"              = "OXOCI-VM-APP-SNOWITON-PRD"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.LastPatchedOn"         = ""
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.LifeCycleStatus"       = "deployment"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.OSManagedBy"           = "Kyndryl"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.Owner"                 = "Morales Rodriguez Alicia Anahi"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.OwnerRole"             = "COORDINADOR GESTION ACTIVOS"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.OwnerTeam"             = "Centro Operaciones"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.ProjectName"           = "Service Now ITOM"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.PurchaseType"          = "on-demand"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.Requester"             = "Morales Rodriguez Alicia Anahi"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.Role"                  = "SNow ITOM MID Server"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.SI"                    = ""
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.ServiceHours"          = "always-on"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.TerminateByDate"       = ""
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.VulnerabilityScanner"  = ""
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.XDR"                   = ""
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]         }
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + display_name                        = "OXOCI-VM-APP-SNOWITON-PRD"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + extended_metadata                   = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + fault_domain                        = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + freeform_tags                       = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + hostname_label                      = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + id                                  = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + image                               = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + instance_configuration_id           = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + ipxe_script                         = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + is_cross_numa_node                  = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + is_pv_encryption_in_transit_enabled = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + launch_mode                         = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + metadata                            = {
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "user_data" = "Q29udGVudC1UeXBlOiBtdWx0aXBhcnQvbWl4ZWQ7IGJvdW5kYXJ5PSJNSU1FQk9VTkRBUlkiCk1JTUUtVmVyc2lvbjogMS4wDQoNCi0tTUlNRUJPVU5EQVJZDQpDb250ZW50LVRyYW5zZmVyLUVuY29kaW5nOiA3Yml0DQpDb250ZW50LVR5cGU6IHRleHQveC1zaGVsbHNjcmlwdA0KTWltZS1WZXJzaW9uOiAxLjANCg0KI3BzMV9zeXNuYXRpdmUKIyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KIyBDbG91ZC1Jbml0IFNjcmlwdCAtIE9YT0NJLVZNLUFQUC1TTk9XSVRPTi1QUkQKIyBTZXJ2aWNlTm93IElUT00gTUlEIFNlcnZlcgojID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQojIENIRzogQ0hHMDE0MDc4OQojIERhdGU6IDAyLTEyLTIwMjYKIyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KCiMgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CiMgU1RFUCAxIC0gU0VUIEhPU1ROQU1FCiMgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CldyaXRlLU91dHB1dCAiU2V0dGluZyBob3N0bmFtZS4uLiIKUmVuYW1lLUNvbXB1dGVyIC1OZXdOYW1lICJPWE9DSS1WTS1BUFAtU05PV0lUT04tUFJEIiAtRm9yY2UKV3JpdGUtT3V0cHV0ICJIb3N0bmFtZSBzZXQgc3VjY2Vzc2Z1bGx5LiIKCiMgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CiMgU1RFUCAyIC0gQ1JFQVRFIExPQ0FMIEFETUlOIFVTRVJTCiMgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CldyaXRlLU91dHB1dCAiQ3JlYXRpbmcgbG9jYWwgYWRtaW4gdXNlcnMuLi4iCgokdXNlcnMgPSBAKAogICAgQHtOYW1lPSJjeG1pbmR3aW4iOyAgICAgUGFzc3dvcmQ9InVQaTM5c3VnNTEyc2F0Z0RhSkR6IjsgRGVzY3JpcHRpb249IkN5YmVyQXJrIFZhdWx0IC0gV2luZG93cyBBZG1pbiJ9LAogICAgQHtOYW1lPSJkcm1pbmR3aW4iOyAgICAgUGFzc3dvcmQ9InFHZ3RQelltaWU1Vzl5R3pvNVgwIjsgRGVzY3JpcHRpb249IkN5YmVyQXJrIFZhdWx0IC0gV2luZG93cyBBZG1pbiJ9LAogICAgQHtOYW1lPSJjc3Rpc2VjIjsgICAgICAgUGFzc3dvcmQ9IjdHbnl1NmpVZUNmb0s5MTdldXBnIjsgRGVzY3JpcHRpb249IlZ1bG5lcmFiaWxpdHkgU2Nhbm5pbmcgLSBDeWJlckFyayJ9LAogICAgQHtOYW1lPSJzZWNzY2FuIjsgICAgICAgUGFzc3dvcmQ9IjdHbnl1NmpVZUNmb0s5MTdldXBnIjsgRGVzY3JpcHRpb249IlZ1bG5lcmFiaWxpdHkgU2Nhbm5pbmcgLSBDeWJlckFyayJ9LAogICAgQHtOYW1lPSJzbm93ZGlzYyI7ICAgICAgUGFzc3dvcmQ9Imc2SE5zQllyVk1LYlRYdlkiOyAgICAgRGVzY3JpcHRpb249IlNlcnZpY2VOb3cgRGlzY292ZXJ5In0sCiAgICBAe05hbWU9ImNzdGlvcGUiOyAgICAgICBQYXNzd29yZD0iN0dueXU2alVlQ2ZvSzkxN2V1cGciOyBEZXNjcmlwdGlvbj0iU2VjdXJpdHkgVGVhbSBBZG1pbiJ9LAogICAgQHtOYW1lPSJjbG91ZF9zdXBwb3J0IjsgUGFzc3dvcmQ9ImdZNzQhY25lNEdoTHF6eSI7ICAgICAgRGVzY3JpcHRpb249IkNsb3VkIFN5c0FkbWluIC0gQ2xvdWQgQm9ybiJ9LAogICAgQHtOYW1lPSJBZG1pbjAxIjsgICAgICAgUGFzc3dvcmQ9InVQaTM5c3VnNTEyc2F0Z0RhSkR6IjsgRGVzY3JpcHRpb249IlNlcnZpY2UgT3duZXIgQWNjZXNzIn0sCiAgICBAe05hbWU9IlByb3ZpZGVyMDEiOyAgICBQYXNzd29yZD0iZUJSMm1KVlBEcmJiOUdLQW1MQjAiOyBEZXNjcmlwdGlvbj0iVmVuZG9yIEFjY2VzcyJ9CikKCmZvcmVhY2ggKCR1c2VyIGluICR1c2VycykgewogICAgJHVzZXJuYW1lID0gJHVzZXIuTmFtZQogICAgJGRlc2NyaXB0aW9uID0gJHVzZXIuRGVzY3JpcHRpb24KICAgICRwYXNzd29yZCA9IENvbnZlcnRUby1TZWN1cmVTdHJpbmcgJHVzZXIuUGFzc3dvcmQgLUFzUGxhaW5UZXh0IC1Gb3JjZQoKICAgIGlmICgtbm90IChHZXQtTG9jYWxVc2VyIC1OYW1lICR1c2VybmFtZSAtRXJyb3JBY3Rpb24gU2lsZW50bHlDb250aW51ZSkpIHsKICAgICAgICBOZXctTG9jYWxVc2VyIGAKICAgICAgICAgICAgLU5hbWUgJHVzZXJuYW1lIGAKICAgICAgICAgICAgLVBhc3N3b3JkICRwYXNzd29yZCBgCiAgICAgICAgICAgIC1EZXNjcmlwdGlvbiAkZGVzY3JpcHRpb24gYAogICAgICAgICAgICAtUGFzc3dvcmROZXZlckV4cGlyZXMgYAogICAgICAgICAgICAtVXNlck1heU5vdENoYW5nZVBhc3N3b3JkIGAKICAgICAgICAgICAgLUFjY291bnROZXZlckV4cGlyZXMKCiAgICAgICAgQWRkLUxvY2FsR3JvdXBNZW1iZXIgLUdyb3VwICJBZG1pbmlzdHJhdG9ycyIgLU1lbWJlciAkdXNlcm5hbWUKCiAgICAgICAgV3JpdGUtT3V0cHV0ICJVc2VyICR1c2VybmFtZSBjcmVhdGVkIGFuZCBhZGRlZCB0byBBZG1pbmlzdHJhdG9ycy4iCiAgICB9IGVsc2UgewogICAgICAgIFdyaXRlLU91dHB1dCAiVXNlciAkdXNlcm5hbWUgYWxyZWFkeSBleGlzdHMsIHNraXBwaW5nLiIKICAgIH0KfQoKV3JpdGUtT3V0cHV0ICJVc2VycyBjcmVhdGVkIHN1Y2Nlc3NmdWxseS4iCgojID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQojIFNURVAgMyAtIENZQkVSQVJLIEZJUkVXQUxMIFJVTEUKIyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KV3JpdGUtT3V0cHV0ICJDcmVhdGluZyBDeWJlckFyayBmaXJld2FsbCBydWxlLi4uIgoKTmV3LU5ldEZpcmV3YWxsUnVsZSBgCiAgICAtRGlzcGxheU5hbWUgIkJvdmVkYV9DbG91ZCIgYAogICAgLURpcmVjdGlvbiBJbmJvdW5kIGAKICAgIC1Qcm90b2NvbCBUQ1AgYAogICAgLUxvY2FsUG9ydCAzMzg5LDEzNSwxMzksNDQ1IGAKICAgIC1SZW1vdGVBZGRyZXNzICIxNzIuMjYuMTUyLjEzMyIsIjE3Mi4yNi4xNTIuMTM0IiwiMTcyLjI2LjE1Mi4xNTAiLCIxNzIuMjYuMTUyLjE1MSIgYAogICAgLUFjdGlvbiBBbGxvdyBgCiAgICAtUHJvZmlsZSBBbnkgYAogICAgLUVuYWJsZWQgVHJ1ZQoKV3JpdGUtT3V0cHV0ICJDeWJlckFyayBmaXJld2FsbCBydWxlIGNyZWF0ZWQgc3VjY2Vzc2Z1bGx5LiIKCiMgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CiMgU1RFUCA0IC0gV0lOUk0gSFRUUFMgKDU5ODYpIEZPUiBBTlNJQkxFCiMgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CldyaXRlLU91dHB1dCAiQ29uZmlndXJpbmcgV2luUk0gZm9yIEFuc2libGUuLi4iCgojIEVuYWJsZSBXaW5STQpFbmFibGUtUFNSZW1vdGluZyAtRm9yY2UKCiMgQ3JlYXRlIHNlbGYtc2lnbmVkIGNlcnRpZmljYXRlCiRjZXJ0ID0gTmV3LVNlbGZTaWduZWRDZXJ0aWZpY2F0ZSBgCiAgICAtRG5zTmFtZSAiT1hPQ0ktVk0tQVBQLVNOT1dJVE9OLVBSRCIgYAogICAgLUNlcnRTdG9yZUxvY2F0aW9uICJDZXJ0OlxMb2NhbE1hY2hpbmVcTXkiIGAKICAgIC1Ob3RBZnRlciAoR2V0LURhdGUpLkFkZFllYXJzKDUpCgojIENyZWF0ZSBIVFRQUyBsaXN0ZW5lcgokdGh1bWJwcmludCA9ICRjZXJ0LlRodW1icHJpbnQKTmV3LUl0ZW0gLVBhdGggIldTTWFuOlxsb2NhbGhvc3RcTGlzdGVuZXIiIGAKICAgIC1UcmFuc3BvcnQgSFRUUFMgYAogICAgLUFkZHJlc3MgKiBgCiAgICAtQ2VydGlmaWNhdGVUaHVtYlByaW50ICR0aHVtYnByaW50IGAKICAgIC1Gb3JjZQoKIyBPcGVuIFdpblJNIEhUVFBTIHBvcnQgaW4gZmlyZXdhbGwKTmV3LU5ldEZpcmV3YWxsUnVsZSBgCiAgICAtRGlzcGxheU5hbWUgIldpblJNIEhUVFBTIC0gQW5zaWJsZSIgYAogICAgLURpcmVjdGlvbiBJbmJvdW5kIGAKICAgIC1Qcm90b2NvbCBUQ1AgYAogICAgLUxvY2FsUG9ydCA1OTg2IGAKICAgIC1BY3Rpb24gQWxsb3cgYAogICAgLVByb2ZpbGUgQW55IGAKICAgIC1FbmFibGVkIFRydWUKCiMgRGlzYWJsZSBIVFRQIGxpc3RlbmVyICg1OTg1KSBmb3Igc2VjdXJpdHkKUmVtb3ZlLUl0ZW0gLVBhdGggIldTTWFuOlxsb2NhbGhvc3RcTGlzdGVuZXJcTGlzdGVuZXIqIiBgCiAgICAtUmVjdXJzZSBgCiAgICAtRXJyb3JBY3Rpb24gU2lsZW50bHlDb250aW51ZQoKIyBIYXJkZW4gV2luUk0KU2V0LUl0ZW0gLVBhdGggIldTTWFuOlxsb2NhbGhvc3RcU2VydmljZVxBdXRoXEJhc2ljIiAtVmFsdWUgJHRydWUKU2V0LUl0ZW0gLVBhdGggIldTTWFuOlxsb2NhbGhvc3RcU2VydmljZVxBbGxvd1VuZW5jcnlwdGVkIiAtVmFsdWUgJGZhbHNlCgojIFJlc3RhcnQgV2luUk0KUmVzdGFydC1TZXJ2aWNlIFdpblJNCgpXcml0ZS1PdXRwdXQgIldpblJNIEhUVFBTIGNvbmZpZ3VyZWQgc3VjY2Vzc2Z1bGx5LiIKCiMgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CiMgU1RFUCA1IC0gRE9NQUlOIEpPSU4gUExBQ0VIT0xERVIKIyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KV3JpdGUtT3V0cHV0ICJEb21haW4gam9pbiAtIFBFTkRJTkcgTUFOVUFMIENPTkZJR1VSQVRJT04iCiMgVE9ETzogVW5jb21tZW50IGFuZCBmaWxsIGNyZWRlbnRpYWxzIGJlZm9yZSBydW5uaW5nCiMgJGRvbWFpblVzZXIgPSAiUExBQ0VIT0xERVJfRE9NQUlOX1VTRVIiCiMgJGRvbWFpblBhc3N3b3JkID0gQ29udmVydFRvLVNlY3VyZVN0cmluZyAiUExBQ0VIT0xERVJfRE9NQUlOX1BBU1NXT1JEIiAtQXNQbGFpblRleHQgLUZvcmNlCiMgJGNyZWRlbnRpYWwgPSBOZXctT2JqZWN0IFBTQ3JlZGVudGlhbCgicHJveGltaWRhZC5jb21cJGRvbWFpblVzZXIiLCAkZG9tYWluUGFzc3dvcmQpCiMgQWRkLUNvbXB1dGVyIC1Eb21haW5OYW1lICJwcm94aW1pZGFkLmNvbSIgLUNyZWRlbnRpYWwgJGNyZWRlbnRpYWwgLVJlc3RhcnQgLUZvcmNlCgojID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQojIFNURVAgNiAtIFJFU1RBUlQgVE8gQVBQTFkgSE9TVE5BTUUKIyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KV3JpdGUtT3V0cHV0ICJSZXN0YXJ0aW5nIHNlcnZlciB0byBhcHBseSBob3N0bmFtZSBjaGFuZ2UuLi4iClN0YXJ0LVNsZWVwIC1TZWNvbmRzIDEwClJlc3RhcnQtQ29tcHV0ZXIgLUZvcmNlCg0KLS1NSU1FQk9VTkRBUlktLQ0K"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]         }
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + private_ip                          = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + public_ip                           = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + region                              = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + shape                               = "VM.Standard.E5.Flex"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + state                               = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + subnet_id                           = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + system_tags                         = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + time_created                        = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + time_maintenance_reboot_due         = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO] 
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + create_vnic_details {
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + assign_ipv6ip          = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + assign_public_ip       = "false"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + defined_tags           = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + display_name           = "OXOCI-VM-APP-SNOWITON-PRD-VNIC"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + freeform_tags          = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + hostname_label         = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + nsg_ids                = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + private_ip             = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + skip_source_dest_check = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + subnet_id              = "ocid1.subnet.oc1.mx-monterrey-1.aaaaaaaau5kkq4x6wku2bgpejmmsui5dsreeh72zqhbocwy2jr2ppjdj3ruq"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + vlan_id                = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]         }
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO] 
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + shape_config {
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + baseline_ocpu_utilization     = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + gpu_description               = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + gpus                          = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + local_disk_description        = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + local_disks                   = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + local_disks_total_size_in_gbs = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + max_vnic_attachments          = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + memory_in_gbs                 = 8
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + networking_bandwidth_in_gbps  = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + nvmes                         = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + ocpus                         = 8
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + processor_description         = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + vcpus                         = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]         }
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO] 
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + source_details {
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + boot_volume_size_in_gbs = "128"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + boot_volume_vpus_per_gb = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + source_id               = "ocid1.image.oc1.mx-monterrey-1.aaaaaaaapusepjywfsvwzwbgyxnxokn5cfzrebny2o542vhzqwnfptxcfyba"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + source_type             = "image"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]         }
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]     }
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO] 
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]   # oci_core_volume.data_volume will be created
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]   + resource "oci_core_volume" "data_volume" {
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + auto_tuned_vpus_per_gb     = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + availability_domain        = "HSqW:MX-MONTERREY-1-AD-1"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + backup_policy_id           = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + cluster_placement_group_id = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + compartment_id             = "ocid1.compartment.oc1..aaaaaaaawond7xtn3whlzg2n3k24q7jfe6iyt5mmjspnr73wq4htxqkprgta"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + defined_tags               = {
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.AccessLevel"        = "private"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.BusinessUnit"       = "FEMSA Servicios"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.ChangeOrder"        = "CHG0140789"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.CreatedBy"          = "IaC (Terraform)"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.CreatedByTeam"      = "Kyndryl"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.CreationDate"       = "02-12-2026"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.DataClassification" = "confidential"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.Environment"        = "PRD"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]           + "Standard-Tags.ProjectName"        = "Service Now ITOM"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]         }
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + display_name               = "OXOCI-BLKVL-APP-SNOWITON-PROD-DATA"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + freeform_tags              = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + id                         = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + is_auto_tune_enabled       = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + is_hydrated                = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + kms_key_id                 = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + size_in_gbs                = "128"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + size_in_mbs                = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + state                      = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + system_tags                = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + time_created               = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + volume_backup_id           = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + volume_group_id            = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + vpus_per_gb                = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]     }
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO] 
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]   # oci_core_volume_attachment.data_volume_attachment will be created
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]   + resource "oci_core_volume_attachment" "data_volume_attachment" {
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + attachment_type                     = "paravirtualized"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + availability_domain                 = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + chap_secret                         = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + chap_username                       = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + compartment_id                      = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + device                              = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + display_name                        = "OXOCI-BLKVL-APP-SNOWITON-PROD-DATA-ATTACHMENT"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + encryption_in_transit_type          = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + id                                  = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + instance_id                         = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + ipv4                                = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + iqn                                 = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + is_agent_auto_iscsi_login_enabled   = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + is_multipath                        = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + is_pv_encryption_in_transit_enabled = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + is_read_only                        = false
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + is_shareable                        = false
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + is_volume_created_during_launch     = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + iscsi_login_state                   = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + multipath_devices                   = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + port                                = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + state                               = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + time_created                        = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + use_chap                            = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + volume_id                           = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]     }
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO] 
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]   # oci_core_volume_backup_policy_assignment.boot_volume_backup will be created
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]   + resource "oci_core_volume_backup_policy_assignment" "boot_volume_backup" {
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + asset_id     = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + id           = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + policy_id    = "ocid1.volumebackuppolicy.oc1..aaaaaaaagcremuefit7dpcnjpdrtphjk4bwm3emm55t6cghctt2m6iyyjdva"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + time_created = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]     }
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO] 
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]   # oci_core_volume_backup_policy_assignment.data_volume_backup will be created
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]   + resource "oci_core_volume_backup_policy_assignment" "data_volume_backup" {
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + asset_id     = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + id           = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + policy_id    = "ocid1.volumebackuppolicy.oc1..aaaaaaaagcremuefit7dpcnjpdrtphjk4bwm3emm55t6cghctt2m6iyyjdva"
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]       + time_created = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]     }
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO] 
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO] Plan: 5 to add, 0 to change, 0 to destroy.
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO] 
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO] Changes to Outputs:
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]   + boot_volume_id      = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]   + data_volume_id      = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]   + instance_id         = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]   + instance_private_ip = (known after apply)
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO] 
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO] ─────────────────────────────────────────────────────────────────────────────
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO] 
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO] Saved the plan to: <path hidden>
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO] 
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO] To perform exactly these actions, run the following command to apply:
+2026/02/13 03:22:54[TERRAFORM_CONSOLE] [INFO]     terraform apply "<path hidden>"
+2026/02/13 03:22:55[TERRAFORM_CONSOLE] [INFO] 
